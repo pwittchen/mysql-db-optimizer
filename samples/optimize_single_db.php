@@ -1,6 +1,6 @@
 <?php
 
-require_once('../optimize_database.php');
+require_once('../OptimizeDatabase.php');
 
 try {
 	$optimize_database = new OptimizeDatabase;
