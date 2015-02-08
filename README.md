@@ -3,7 +3,7 @@ mysql-db-optimizer
 
 This project was created in 2008 and allows to perform [MySQL OPTIMIZE](http://dev.mysql.com/doc/refman/5.1/en/optimize-table.html) command on a single databse or many databases with different hosts, usernames and passwords. This repository contains two PHP classes. `OptimizeDatabase` is able to optimize single database and `OptimizeDatabases` is able to optimize many databases.
 
-If you are administrator of all databses and every databse is available on a single host, you can use the following commands instead of this project:
+If you are administrator of all databses and every databse is available on one host, you can use the following commands instead of this project:
 * `mysqlcheck -o <db_schema_name>` for a single databse
 * `mysqlcheck -o --all-databases` for many databases
 
