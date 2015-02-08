@@ -74,7 +74,7 @@ class OptimizeDatabase {
 			$data_free = 0;
 		}
 
-		$this->disconnect();d
+		$this->disconnect();
 		return array('data_free' => $data_free, 'overloaded_tables' => $count);
 	}
 }
