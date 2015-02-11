@@ -64,14 +64,13 @@ class OptimizeDatabase {
 	public function do_optimization() {
 		$array = $this->get_overloaded_tables();
 		$count = count($array);
+		$data_free = 0;
 
 		if($count > 0) {
 			foreach($array as $table => $value) {
 				$data_free += $value['Data_free'];
 				mysql_query('OPTIMIZE TABLE `'.$table.'`');
 			}
-		} else {
-			$data_free = 0;
 		}
 
 		$this->disconnect();
